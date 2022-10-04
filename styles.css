@@ -1,0 +1,619 @@
+:root {
+    --bitcoin-orange: #f7931a;
+    --soft-orange: #ffe9d5;
+    --secondary-blue: #1a9af7;
+    --soft-blue: #e7f5ff;
+    --warm-black: #282623;
+    --black: #201e1c;
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #fff;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62,5%;           
+
+    font-family: 'DM Sans', sans-serif;
+
+   /*font-family: 'DM Sans', sans-serif;*/ /* CONFIRMADO EL CONFLICTO CAMBIAR O REINSTALAR LA FUNETE........revisar el tipo de fuente, creo que toca ir a google fonts, conseguir la fuente, reinstalarla en html y llamarla en esta linea pues no concuerdan los tamanios aplicados con los que deber'ian aplicarse*/
+}
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background-image: radial-gradient(circle at 73.61% 16.28%, #d8ff1f 0, #b1ff29 16.67%, #7dff2d 33.33%, #10f82d 50%, #00e833 66.67%, #00db43 83.33%, #00d457 100%);
+/*     bckground: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+ */}
+header img {
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center;
+}
+
+.header--title--container{
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+}
+
+.header--title--container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.header--title--container p{
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+
+.header--title--container .header--button{
+    position: absolute;
+    left: calc(50% - 118px);
+    top: 270px;
+    display: block;
+    margin-top: 35px; 
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off-white);
+    /*sombra*/
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.header--button span{
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url('./assets/icons/down-arrow.svg'); /*agregar icono de boton aqu'i en ese link */
+}
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--off-white);
+}
+
+.main-info-container{
+    width: 100%;
+    height: auto;
+    padding-top:80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.main-info-container--title{
+    width: 90% ;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main-info-container .backgroundImg{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-image: url('./img/chica.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-info-container h2 {
+    margin-bottom: 30px;;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+
+.main-info-container p {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #757575;
+}
+
+.main-currency-table{
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family: "inter", sans-serif;
+
+}
+INSERTAR UN LOGIN
+
+.main-currency-table .currency-table--title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight:bold;
+    line-height: 2.3rem;
+    color: var(--bitcoin-orange);
+}
+
+ .currency-table--container {
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+
+}
+
+.currency-table--container table {
+    width: 100%;
+    height: 100%;
+}
+
+.currency-table--container td {
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey);
+    background-color: var(--just-white);
+}
+.currency-table--container .table__top-left {
+    border-radius: 15px 0 0 0;
+}
+
+.currency-table--container .table__top-rigth {
+    border-radius: 0 15px 0 0;
+}
+
+.currency-table--container .table__bottom-left {
+    border-radius:  0 0 0 15px;
+}
+.currency-table--container .table__bottom-rigth {
+    border-radius: 0 0 15px 0;
+}
+
+.currency-table--container .table__rigth {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;    
+}
+
+.currency-table--container .down{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url("./assets/icons/trending-down.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.currency-table--container .up{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url("./assets/icons/trending-up.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+   .currency-table--date{
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 8px;
+    background-color: var(--soft-orange);
+    border-radius: 8px;
+     
+  }
+
+  .currency-table--date p {
+    font-size: 1.2rem;
+    font-weight: 300; /*esto no se esta aplicando toca revisar */
+    line-height: 1.5rem;
+    color: var(--black);
+  }
+
+  .main-product-detail {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-image: radial-gradient(circle at 47.12% 82.88%, #d8ff1f 0, #b1ff29 16.67%, #7dff2d 33.33%, #10f82d 50%, #00e833 66.67%, #00db43 83.33%, #00d457 100%);  }
+
+  .product-detail--batata-logo {
+    position: absolute; 
+    width: 40px;
+    height: 25px;
+    top: -10px;
+    left: calc(50% - 20px);
+    background-image: url("./assets/icons/batata.svg");
+  }
+
+  .product-detail--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto ;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .product-detail--title h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6;
+    color: var(--just-white);
+  }
+
+  .product-detail--title p { 
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color:white;
+  }
+
+  .product-detail--card {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    min-height: 150px; /*  en esta linea se resuelve el problema del tecto que se sale de las tarjetas. agregue min a la propiedad heigth que ya tenia*/
+    margin: 15px auto;
+    padding: 15px;
+    background-color: #b1ff29;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+  }
+
+ 
+  .product-detail--card #clock {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url('./assets/icons/clock.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.product-detail--card #eye {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url('./assets/icons/eye.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-detail--card #dolar {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url('./assets/icons/dollar-sign.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-detail--card #info {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 10px;
+    background-image: url('./assets/icons/check-circle.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.product--card-title { 
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+
+.product--card--body {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+
+ .bitcoin-img-container{
+    width: 100%;
+    min-width: 320px;
+    height: 50vh;
+    background-image: url("./img/fornitewalpaper.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+ }
+
+ .bitcoin-img-container h2 {
+    padding-top: 60px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+ }
+
+
+
+/* inicio de la seccion de login
+ */main .login {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-image: radial-gradient(circle at 47.37% 19.92%, #f4ff0a 0, #d6ff20 12.5%, #afff29 25%, #7cff2d 37.5%, #10f82d 50%, #00e833 62.5%, #00dc42 75%, #00d456 87.5%, #00d16d 100%);
+  }
+  main .form-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 300px;
+  }
+  .logo {
+    width: 150px;
+    margin-bottom: 48px;
+    justify-self: center;
+    display: none;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .form a {
+    color: #10f82d;
+    font-size: var(--sm);
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 52px;
+  }
+  .label {
+    font-size: var(--sm);
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  .input {
+    background-color: var(--grey);
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 12px;
+  }
+  .input-email {
+    margin-bottom: 22px;
+  }
+  .primary-button {
+    background-color: #10f82d;
+    border-radius: 8px;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+  }
+  .secondary-button {
+    background-color: #10f82d;
+    border-radius: 8px;
+    border: 1px solid  #d8ff1f ;  /* //ingresar amarillo limon  */
+    color: var(--black);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+  }
+  .login-button {
+    margin-top: 14px;
+    margin-bottom: 30px;
+  }
+/* fin de la seccion de login
+ */
+
+
+
+
+ .main-planes-container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+ }
+
+ .planes-title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+ }
+
+ .planes-title h2{
+    padding-top: 50px;
+    font-family: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+ }
+
+ .planes-title p {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+ }
+
+ .planes-container--slider {
+    display: flex;
+    gap: 10px;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type:  x proximity; 
+}
+
+.planes-container--slider .flechas{
+    background-image: url("./assets/icons/right-arrow.svg"); /*METER LAS FLECHAS AQUI*/
+}
+
+ .planes-container--card {
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 190px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px auto 0; /*aqu'i se podr'ia cambiar auto por 30px para obtener la misma funcion de gap: 50px;*/
+    padding: 0 15px;
+    background-color: var(--just-white);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+ }    
+
+ .recomendado{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    padding: 6px;
+    top: -15px;
+    left: calc(50% - 60px);
+
+    font-size: 1.2rem;
+    background-color: #10f82d;
+    border-radius: 8px;
+    color: var(--just-white);
+ }
+
+ .plan-card--title {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: black;
+ }
+
+ .plan-card--price {
+    padding:  5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 6.3rem;
+    color: black;
+ }
+
+ .plan-card--price span {
+    font-size: 1.2rem;
+    font-weight: 300;
+    vertical-align: text-top; /*con esta propiedad pude posicionar el $ arriba*/
+    
+ }
+
+ .plan-card--saving {
+    font-size: 1.2rem;
+    color: #757575 ;
+ }
+
+ .plan-card--calltoaction {
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #faf8f7;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-weight: 1.8rem;
+    color: var(--black);
+ }
+
+ .plan-card--calltoaction span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./assets/icons/orange-right-arrow.svg);
+    vertical-align: text-bottom;
+ }
+
+ footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-image: radial-gradient(circle at 12.29% 87.71%, #d8ff1f 0, #b1ff29 16.67%, #7dff2d 33.33%, #10f82d 50%, #00e833 66.67%, #00db43 83.33%, #00d457 100%); }
+
+ footer section {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+ }
+
+ footer .left ul {
+    font-size: 1.4rem;
+    font-weight: 500px;
+    line-height: 1.8rem;
+    list-style: none;
+ }
+
+ .left li {
+    margin: 10px 0;
+ }
+
+ .left a {
+    text-decoration: none;
+    color: var(--just-white);
+ }
+
+ 
+
+
+
