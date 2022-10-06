@@ -18,11 +18,8 @@
 }
 
 html {
-    font-size: 62,5%;           
-
+    font-size: 62.5%;           
     font-family: 'DM Sans', sans-serif;
-
-   /*font-family: 'DM Sans', sans-serif;*/ /* CONFIRMADO EL CONFLICTO CAMBIAR O REINSTALAR LA FUNETE........revisar el tipo de fuente, creo que toca ir a google fonts, conseguir la fuente, reinstalarla en html y llamarla en esta linea pues no concuerdan los tamanios aplicados con los que deber'ian aplicarse*/
 }
 
 header {
@@ -612,6 +609,13 @@ INSERTAR UN LOGIN
     text-decoration: none;
     color: var(--just-white);
  }
+
+.rigth img{
+  width: 150px;
+    height: 80px;
+    margin-top: 10px;
+    align-self: center;
+}
 
  
 
